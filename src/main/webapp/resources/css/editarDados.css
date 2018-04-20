@@ -1,0 +1,113 @@
+.box-inputs-editaDados {
+	width: 38em;
+	display: flex;
+	justify-content: space-around;
+	height: 4em;
+}
+
+.box-label-editaDados {
+	width: 80%;
+	display: flex;
+	flex-flow: column;
+}
+
+.input-editaDados {
+	width: 23em;
+}
+
+.label-editarDados {
+	font-weight: 900;
+	font-size: 0.725em;
+	color: #222;
+}
+
+.box-title-senha {
+	width: 100%;
+	border-bottom: 1px solid #f1f1f1;
+	height: 2em;
+	margin-top: 2em;
+}
+
+.text-title-senha {
+	font-size: 1.3em;
+	font-weight: 700;
+	font-family: "Lato", sans-serif;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.input-editaSenha {
+	width: 49em;
+}
+
+.box-direito-minhaConta {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 21em;
+	justify-content: space-around;
+	flex-flow: column;
+	border-left: 2px solid #ececec;
+	padding-left: 1em;
+}
+
+.btn-atualizaDados {
+	width: 13em;
+	height: 2.9em;
+	border: 2px solid #446084;
+	cursor: pointer;
+	background-color: white;
+}
+
+.container-alteraSenha {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	height: 20em;
+	display: none;
+}
+
+.atualiza-dadosPessoais {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	height: 20em;
+}
+
+.message-alteracao-sucesso {
+	color: #7a9c59;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 1.5em;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.message-alteracao-erro {
+    color: #b20000;
+    position: absolute;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    bottom: 14.8em;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.icon-check:before {
+	content: "\f00c";
+	color: #7a9c59;
+}
+
+.icon-close2:before {
+	content: "\f00d";
+	color: #b20000;
+}
+
+.page-edit{
+	border-bottom: solid 3px #0B0B61;
+}
+
+.text-page-edit{
+	color: #0B0B61;
+}

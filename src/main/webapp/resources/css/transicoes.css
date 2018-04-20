@@ -1,0 +1,153 @@
+.btn-cart {
+	background-color: #2fdab8;
+	transform: scale(1);
+	transition: transform .25s;
+}
+
+.name-btn-cart {
+	color: white;
+	transform: scale(1);
+	transition: transform .25s;
+}
+
+.btn-view {
+	background-color: #2fdab8;
+	transition: all 0.5s ease-out 0s;
+}
+
+.name-btn-view {
+	color: white;
+	transition: all 0.5s ease-out 0s;
+}
+
+.showForm{
+	height: 38em;
+	transition: all 0.5s ease-out 0s;
+}
+
+.btn-slider-change {
+	background-color: white;
+	border: 3px solid black;
+	box-shadow: inset 3px 0 0 black;
+}
+
+.name-btn-slider {
+	color: black;
+}
+
+.color-link-continue {
+	font-size: 1em;
+	color: black;
+}
+
+.linha-link-box-width {
+	width: 5em;
+	background-color: black;
+}
+
+.BtnEmailColor {
+	background-color: #446084;
+}
+
+.btn-cheout {
+	background-color: #446084;
+	color: black;
+}
+
+.colorWhite {
+	color: white;
+}
+
+.view-box-products {
+	transition: all 0.5s ease-out 0s;
+	opacity: 1;
+	top: 10.1em;
+	cursor: pointer;
+}
+
+.select-box {
+	height: 2.95em;
+	background-color: white;
+	border: solid 1px #ded6c7;
+	border-bottom: 1px solid white;
+}
+
+.colorBlack {
+	color: black;
+	transition: all .2s;
+}
+
+.btn-cart-page {
+	background-color: #0B243B;
+	transition: all 0.5s ease-out 0s;
+}
+
+.remove-text-frete {
+	display: none;
+	transition: transform .25s;
+}
+
+.add-display-flex {
+	display: flex;
+	transition: transform .25s;
+}
+
+.text-frete-ajax {
+	width: 12.2em;
+	font-weight: 100;
+}
+
+.changeColor-btn-cart {
+	background-color: #446084;
+	transition: transform .25s;
+}
+
+.drop-top-right {
+	transform: scale(1);
+	transition: transform .25s;
+	transform-origin: top right;
+	opacity: 1;
+}
+
+.remove-drop-top-right {
+	transform: scale(0);
+	transition: transform .25s;
+	transform-origin: top right;
+	opacity: 1;
+}
+
+.show-login {
+	transform: scale(1);
+	transition: transform .25s;
+	transform-origin: top;
+	opacity: 1;
+}
+
+.remove-login {
+	transform: scale(0);
+	transition: transform .25s;
+	transform-origin: top;
+	opacity: 0;
+}
+
+.input-borda {
+	outline: 2px solid #1f9da2;
+}
+
+.text-hover{
+	color: #0B0B61;
+}
+
+
+.writhe-password{
+	border: 2px solid green;
+}
+
+.wrong-password{
+	outline: 2px solid red;
+}
+
+.color-link-header{
+	color: white;
+	transition: transform .25s;
+}

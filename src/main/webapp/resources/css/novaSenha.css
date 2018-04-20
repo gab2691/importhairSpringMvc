@@ -1,0 +1,43 @@
+.formAlteraSenha {
+	opacity: 1;
+	transform: scale(1);
+	width: 62%;
+	display: flex;
+	border-radius: 10px;
+	align-items: center;
+	box-shadow: none;
+	flex-flow: column;
+	background-color: white;
+	height: 11em;
+	justify-content: space-between;
+	margin-top: 4em;
+}
+
+.titleNovaSenha {
+	border-bottom: none;
+    width: 37%;
+    margin-right: 32em;
+}
+
+.page-nova {
+	width: 50em;
+}
+
+.page-nova-label {
+	width: 78%;
+}
+
+.input-page-nova {
+	width: 31em;
+}
+
+.btn-page-nova {
+	width: 11em;
+	height: 2.9em;
+	border: navajowhite;
+	border: 2px solid #446084;
+	cursor: pointer;
+	background-color: white;
+	margin-right: 46.5em;
+}
+}

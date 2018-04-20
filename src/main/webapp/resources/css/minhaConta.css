@@ -1,0 +1,127 @@
+.page-account {
+	flex-flow: inherit;
+	width: 80%;
+}
+
+.container-page-account {
+	width: 80%;
+	margin: auto;
+	display: flex;
+}
+
+.box-painel-user {
+	width: 30%;
+	height: 23em;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+}
+
+.box-title-user {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	height: 7em;
+}
+
+.icon-user-circle-o:before {
+	content: "\f2be";
+	font-size: 4em;
+}
+
+.name-user-account {
+	font-family: "Lato", sans-serif;
+	font-weight: 600;
+	line-height: 1.6;
+	color: #777;
+	text-transform: uppercase;
+}
+
+.box-conta-opcao {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
+	height: 12em;
+}
+
+.opcoes-conta {
+	border-bottom: 1px solid #ececec;
+	width: 17em;
+	height: 1.7em;
+	cursor: pointer;
+	transform: scaleX(1);
+}
+
+.opcoes-conta:after {
+	display: block;
+	content: '';
+	border-bottom: solid 3px #0B0B61;
+	transform: scaleX(0);
+	transition: transform 300ms ease-in-out;
+	margin-top: .9em;
+}
+
+.opcoes-conta:hover:after {
+	transform: scaleX(1);
+}
+
+.nome-opcao {
+	font-weight: 700;
+	font-family: "Lato", sans-serif;
+	font-size: .8em;
+	letter-spacing: .02em;
+	text-transform: uppercase;
+	color: rgba(102, 102, 102, 0.85);
+	cursor: pointer;
+}
+
+.icon-clipboard2:before {
+	content: "\e97f";
+	font-size: 1.4em;
+}
+
+.icon-database:before {
+	content: "\f1c0";
+	font-size: 1.4em;
+}
+
+.box-page-acount {
+	border-top: 5px solid #0B0B61;
+}
+
+.box-direito-opcoes {
+	width: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	border-left: 2px solid #ececec;
+}
+
+.link-box a {
+	font-family: "Lato", sans-serif;
+	color: #086A87;
+	font-size: .8em;
+	text-decoration: none;
+}
+
+.link-conta {
+	text-decoration: none;
+}
+
+.link-myAccount {
+	display: flex;
+	flex-flow: column;
+	margin: auto;
+	height: 1.5em;
+	cursor: pointer;
+	width: 5em;
+	align-items: center;
+	text-decoration: none;
+}
+
+.linha-myAccount {
+	width: 25%;
+	opacity: 0.4;
+	height: .1px;
+	background-color: #446084;
+	margin: auto;
+}
