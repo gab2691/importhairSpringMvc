@@ -206,11 +206,11 @@
 			</snapshots>
 		</repository>
 		
-		<!-- <repository>
+		<repository>
 	        <id>project.local</id>
 	        <name>project</name>
-	        <url>file:${project.basedir}</url>
-    	</repository> -->
+	        <url>C:\Users\gabriel\.m2\repository\pagseguro\pagseguro-api\2.2.0-SNAPSHOT\</url>
+    	</repository>
 		
 	</repositories>
 
