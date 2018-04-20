@@ -209,7 +209,7 @@
 		<repository>
 	        <id>project.local</id>
 	        <name>project</name>
-	        <url>file:C:\Users\gabriel\.m2\repository\pagseguro\pagseguro-api\</url>
+	        <url>file:C:\Users\gabriel\.m2\repository\pagseguro\pagseguro-api\2.2.0-SNAPSHOT</url>
 	    </repository>
 	
 		
