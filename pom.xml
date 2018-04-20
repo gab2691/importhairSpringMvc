@@ -207,7 +207,7 @@
 		</repository>
 		
 		<repository>
-	        <id>project.local</id>
+	        <id>importHair</id>
 	        <name>project</name>
 	        <url>file:${project.basedir}/</url>
 	    </repository>
