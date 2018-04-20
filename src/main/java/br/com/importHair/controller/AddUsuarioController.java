@@ -34,7 +34,6 @@ public class AddUsuarioController {
 		
 		String senha = usuario.getSenha();
 		
-		
 		usuario.setSenha(new BCryptPasswordEncoder().encode(usuario.getSenha()));
 		usuario.setRoles("ROLE_USUARIO");
 		

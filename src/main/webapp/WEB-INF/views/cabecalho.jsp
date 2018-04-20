@@ -139,7 +139,7 @@
 						<input class="input-inform input-cadastro" id="UsuarioComple" name="numero" type="text">
 					</div>
 				</div> 
-				<input type="hidden" name="${_csrf.parameterName }"	value="${_csrf.token }"/>
+				<input type="hidden" name="${_csrf.parameterName}"	value="${_csrf.token}"/>
 				<button class="btn-login btn-cadastro">Cadastrar</button>
 			</div>	
 		</form>
