@@ -23,6 +23,12 @@
 		</dependency>
 		
 		<dependency>
+			<groupId>pagseguro260</groupId>
+			<artifactId>pagseguro-api-260</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+		
+		<dependency>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis</artifactId>
 			<version>1.4</version>

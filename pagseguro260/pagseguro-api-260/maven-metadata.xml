@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>pagseguro260</groupId>
+  <artifactId>pagseguro-api-260</artifactId>
+  <versioning>
+    <release>2.6.0</release>
+    <versions>
+      <version>2.6.0</version>
+    </versions>
+    <lastUpdated>20180420203033</lastUpdated>
+  </versioning>
+</metadata>
