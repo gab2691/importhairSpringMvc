@@ -209,7 +209,7 @@
 		<repository>
 	        <id>project.local</id>
 	        <name>project</name>
-	        <url>C:\Users\gabriel\.m2\repository\pagseguro\pagseguro-api\2.2.0-SNAPSHOT\2.2.0-SNAPSHOT.jar</url>
+	        <url>C:\Users\gabriel\.m2\repository\</url>
     	</repository>
 		
 	</repositories>
