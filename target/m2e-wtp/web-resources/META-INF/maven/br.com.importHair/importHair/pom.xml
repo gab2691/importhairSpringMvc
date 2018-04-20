@@ -206,11 +206,11 @@
 			</snapshots>
 		</repository>
 		
-		<repository>
+		<!-- <repository>
 	        <id>project.local</id>
 	        <name>project</name>
 	        <url>file:${project.basedir}</url>
-    	</repository>
+    	</repository> -->
 		
 	</repositories>
 
