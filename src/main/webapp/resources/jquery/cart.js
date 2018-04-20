@@ -36,7 +36,7 @@ var removeItem = function() {
 
 		$.ajax({
 			type : "GET",
-			url : "https:/importHair/atualizaTotal",
+			url : "https://atualizaTotal",
 			data : {},
 	
 			success : function(resultado) {
