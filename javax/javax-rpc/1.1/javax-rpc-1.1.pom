@@ -3,6 +3,6 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>javax</groupId>
-  <artifactId>javax-api</artifactId>
-  <version>jaxrpc-api-1.1</version>
+  <artifactId>javax-rpc</artifactId>
+  <version>1.1</version>
 </project>
