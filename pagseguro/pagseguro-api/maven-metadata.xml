@@ -3,11 +3,12 @@
   <groupId>pagseguro</groupId>
   <artifactId>pagseguro-api</artifactId>
   <versioning>
-    <release>axis-1.4</release>
+    <release>jaxrpc-api-1.1</release>
     <versions>
       <version>2.2.0-SNAPSHOT</version>
       <version>axis-1.4</version>
+      <version>jaxrpc-api-1.1</version>
     </versions>
-    <lastUpdated>20180420181412</lastUpdated>
+    <lastUpdated>20180420181747</lastUpdated>
   </versioning>
 </metadata>
