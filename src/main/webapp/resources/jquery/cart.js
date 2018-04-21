@@ -27,7 +27,7 @@ var removeItem = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "https:/importHair/removeItem",
+		url : "https:/importHair/removeItem/",
 		data : {"id" : $this.parent().find(".id-product").text()
 				},
 
@@ -36,7 +36,7 @@ var removeItem = function() {
 
 		$.ajax({
 			type : "GET",
-			url : "https://atualizaTotal",
+			url : "https://atualizaTotal/",
 			data : {},
 	
 			success : function(resultado) {
@@ -84,7 +84,7 @@ var ajaxCart = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "https:/importHair/cartPage",
+		url : "https:/importHair/cartPage/",
 		data : {},
 	
 		success : function(resultado) {
