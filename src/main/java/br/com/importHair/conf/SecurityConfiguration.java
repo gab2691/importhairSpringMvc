@@ -57,6 +57,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 		http.requiresChannel().antMatchers("/login**,/user**").requiresSecure()
 		.and().authorizeRequests()
 		.antMatchers("/").permitAll()
+		.antMatchers("/cartPage").permitAll()
 		.anyRequest().authenticated();
 	    
 	}
