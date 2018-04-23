@@ -27,7 +27,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.requiresChannel().antMatchers("/").requiresSecure();
-		http.authorizeRequests().anyRequest().authenticated();
+		/*http.authorizeRequests().reanyRequest().authenticated();*/
 	    /*.antMatchers("/").permitAll()
 	    .antMatchers("/addUsuario").permitAll()
 	    .antMatchers("/buscaEndereco").permitAll()
