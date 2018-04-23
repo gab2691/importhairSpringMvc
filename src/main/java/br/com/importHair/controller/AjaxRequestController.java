@@ -271,6 +271,7 @@ public class AjaxRequestController {
 			items.add(item);
 			
 			pedidoItem.setPedido(this.pedido);
+			pedidoItem.setId(null);
 			PIdao.addPI(pedidoItem);
 		}
 
