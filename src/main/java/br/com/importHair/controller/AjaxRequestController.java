@@ -46,6 +46,7 @@ import br.com.uol.pagseguro.enums.Currency;
 import br.com.uol.pagseguro.enums.ShippingType;
 import br.com.uol.pagseguro.exception.PagSeguroServiceException;
 
+
 @Controller
 @Transactional
 @Scope(value = WebApplicationContext.SCOPE_REQUEST)
