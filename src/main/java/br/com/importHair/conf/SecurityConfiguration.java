@@ -55,7 +55,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	    .failureHandler(customAuthenticationFailureHandler);*/
 		
 		http.requiresChannel().antMatchers("/login**,/user**").requiresSecure()
-		.and().authorizeRequests().anyRequest().authenticated();
+		.and().authorizeRequests()
+		.antMatchers("/").permitAll()
+		.anyRequest().authenticated();
 	    
 	}
 	
