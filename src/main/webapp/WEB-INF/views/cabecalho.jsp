@@ -237,19 +237,19 @@
 					
 					<a href="/product/?id=12" class="link-product-header">
 						<div class="box-options-products">
-							<p class="name-products-header">Minoxidil 2 Mês</p>
+							<p class="name-products-header">Minoxidil 2 Meses</p>
 						</div>
 					</a>
 					
 					<a href="/product/?id=22" class="link-product-header">
 						<div class="box-options-products">
-							<p class="name-products-header">Minoxidil 3 Mês</p>
+							<p class="name-products-header">Minoxidil 3 Meses</p>
 						</div>
 					</a>
 					
 					<a href="/product/?id=32" class="link-product-header">
 						<div class="box-options-products">
-							<p class="name-products-header">Minoxidil 6 Mês</p>
+							<p class="name-products-header">Minoxidil 6 Meses</p>
 						</div>
 					</a>
 				</div>
