@@ -50,9 +50,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	    .antMatchers("/loginCustom").permitAll()
 	    .antMatchers("/checkOut").permitAll()
 	    .antMatchers("/logout").permitAll()
-	    .anyRequest().authenticated().
-	    and().formLogin().successHandler(customAuthenticationSuccessHandler)
-	    .failureHandler(customAuthenticationFailureHandler);
+	    .anyRequest().authenticated()
+	    .and().formLogin().successHandler(customAuthenticationSuccessHandler)
+	    .failureHandler(customAuthenticationFailureHandler)
+	    .and().requiresChannel().anyRequest().requiresSecure();
 	
 	    
 	}
