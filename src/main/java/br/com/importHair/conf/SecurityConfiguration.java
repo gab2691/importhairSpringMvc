@@ -26,8 +26,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.requiresChannel().antMatchers("/login,/addUsuario,/buscaEndereco,/carrinho/add"
-				+ "/atualizaTotal,/atualizaSubTotal,/totalGeral,/calculaFrete,/atualizaQtn").requiresSecure();
+		http.requiresChannel().antMatchers(/*"/login,/addUsuario,/buscaEndereco,/carrinho/add"
+				+ "/atualizaTotal,/atualizaSubTotal,/totalGeral,/calculaFrete,/atualizaQtn"*/).requiresSecure();
 	    /*.antMatchers("/").permitAll()
 	    .antMatchers("/addUsuario").permitAll()
 	    .antMatchers("/buscaEndereco").permitAll()
