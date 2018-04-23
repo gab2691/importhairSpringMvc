@@ -244,6 +244,7 @@ public class AjaxRequestController {
 		this.pedido.setStatus("GERADO");
 		this.pedido.setTotal(pedido.getTotalgeral());
 		this.pedido.setSubTotal(pedido.getSubTotal());
+		this.pedido.setId(null);
 		
 		Pdao.addPedido(this.pedido);
 		
