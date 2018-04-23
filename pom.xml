@@ -16,12 +16,6 @@
 	<dependencies>
 		
 		
-		<!-- <dependency>
-			<groupId>pagseguro</groupId>
-			<artifactId>pagseguro-api</artifactId>
-			<version>2.2.0-SNAPSHOT</version>
-		</dependency> -->
-		
 		<dependency>
 			<groupId>pagseguro260</groupId>
 			<artifactId>pagseguro-api-260</artifactId>

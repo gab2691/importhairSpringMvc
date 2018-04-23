@@ -229,25 +229,25 @@
 				</div>
 				
 				<div class="box-products-header">
-					<a href="/importHair/product/?id=1" class="link-product-header">
+					<a href="/product/?id=1" class="link-product-header">
 						<div class="box-options-products">
 							<p class="name-products-header">Minoxidil 1 Mês</p>
 						</div>
 					</a>
 					
-					<a href="/importHair/product/?id=2" class="link-product-header">
+					<a href="/product/?id=2" class="link-product-header">
 						<div class="box-options-products">
 							<p class="name-products-header">Minoxidil 2 Mês</p>
 						</div>
 					</a>
 					
-					<a href="/importHair/product/?id=3" class="link-product-header">
+					<a href="/product/?id=3" class="link-product-header">
 						<div class="box-options-products">
 							<p class="name-products-header">Minoxidil 3 Mês</p>
 						</div>
 					</a>
 					
-					<a href="/importHair/product/?id=4" class="link-product-header">
+					<a href="/product/?id=4" class="link-product-header">
 						<div class="box-options-products">
 							<p class="name-products-header">Minoxidil 6 Mês</p>
 						</div>
@@ -298,7 +298,7 @@
 		
 		<div class="btns-cart-header">		
 			<button type="submit" class="btn-cart-cont">
-				<a href="/importHair" style="text-decoration:  none;">
+				<a href="/" style="text-decoration:  none;">
 					<spam class="title-btn-cart">shopping cart</spam>
 				</a>	
 			</button>			
