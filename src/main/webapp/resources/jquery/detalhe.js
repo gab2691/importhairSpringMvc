@@ -16,7 +16,7 @@ var somaQtn = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/importHair/atualizaTotal",
+		url : "/atualizaTotal",
 		data : {
 			"id" : $(this).parent().find(".id").val(),
 			"quantidade" : qtn + 1,
@@ -46,7 +46,7 @@ var subtraiQtn = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/importHair/atualizaTotal",
+		url : "/atualizaTotal",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"id" : $(this).parent().find(".id").val(),
@@ -80,7 +80,7 @@ var frete = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/importHair/calculaFrete",
+		url : "/calculaFrete",
 		data : {
 			"cep" : $(".input-caep").val()
 		},
@@ -97,7 +97,7 @@ var frete = function() {
 			
 			$.ajax({
 				type : "GET",
-				url : "/importHair/totalGeral",
+				url : "/totalGeral",
 				data : {},
 
 				success : function(resultado) {
@@ -125,7 +125,7 @@ var verificaLogin = function() {
 
 		$.ajax({
 			type : "GET",
-			url : "/importHair/checkOut",
+			url : "/checkOut",
 			data : {},
 
 			success : function(resultado) {
