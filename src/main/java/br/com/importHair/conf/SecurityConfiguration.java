@@ -26,8 +26,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.requiresChannel().antMatchers(/*"/login,/addUsuario,/buscaEndereco,/carrinho/add"
-				+ "/atualizaTotal,/atualizaSubTotal,/totalGeral,/calculaFrete,/atualizaQtn"*/).requiresSecure();
+		http.requiresChannel().antMatchers().requiresSecure();
+		http.authorizeRequests().anyRequest().authenticated();
 	    /*.antMatchers("/").permitAll()
 	    .antMatchers("/addUsuario").permitAll()
 	    .antMatchers("/buscaEndereco").permitAll()
@@ -50,11 +50,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	    .antMatchers("/novaSenha").permitAll()
 	    .antMatchers("/loginCustom").permitAll()
 	    .antMatchers("/checkOut").permitAll()
-	    .antMatchers("/logout").permitAll()
-	    .anyRequest().authenticated().
+	    .antMatchers("/logout").permitAll()*/
+	    /*.anyRequest().authenticated().
 	    and().formLogin().successHandler(customAuthenticationSuccessHandler)
-	    .failureHandler(customAuthenticationFailureHandler);
-	*/
+	    .failureHandler(customAuthenticationFailureHandler);*/
+	
 	    
 	}
 	
