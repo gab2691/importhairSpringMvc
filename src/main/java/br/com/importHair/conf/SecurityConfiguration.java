@@ -26,7 +26,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests()
+		/*http.authorizeRequests()
 		.antMatchers("/").permitAll()
 		.antMatchers("/addUsuario").permitAll()
 	    .antMatchers("/buscaEndereco").permitAll()
@@ -52,7 +52,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	    .antMatchers("/logout").permitAll()
 		.anyRequest().authenticated()
 		.and().formLogin().successHandler(customAuthenticationSuccessHandler)
-	    .failureHandler(customAuthenticationFailureHandler);
+	    .failureHandler(customAuthenticationFailureHandler);*/
 		
 		http.requiresChannel().antMatchers("/login**,/user**").requiresSecure();
 	    
