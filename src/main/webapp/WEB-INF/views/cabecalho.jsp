@@ -200,7 +200,7 @@
 		</div>
 		<div class="container-menu">
 			<div class="menu-nav">
-				<a href="/importHair">
+				<a href="/">
 					<img class="logo-class"	src="<c:url value="/resources/imagens/logo1.png"/>">
 				</a>
 			</div>
