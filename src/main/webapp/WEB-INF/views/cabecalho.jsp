@@ -58,7 +58,7 @@
 			
 			
 			
-		<form action="/importHair/addUsuario" method="post">
+		<form action="/addUsuario" method="post">
 			<div class="box-cadastro">
 				<div class="box-title-login">
 					<p class="title-login">Cadastro</p>
@@ -206,7 +206,7 @@
 			</div>
 
 			<div class="opçções-user">
-				<a href="/importHair" class="link-conta">
+				<a href="/" class="link-conta">
 					<div class="user-details">
 						<span class="icon-home5"></span>
 						<p>home</p>
