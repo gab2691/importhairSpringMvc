@@ -53,7 +53,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	    .anyRequest().authenticated()
 	    .and().formLogin().successHandler(customAuthenticationSuccessHandler)
 	    .failureHandler(customAuthenticationFailureHandler)
-	    .and().requiresChannel().anyRequest().requiresSecure();
+	    ;
 	
 	    
 	}
