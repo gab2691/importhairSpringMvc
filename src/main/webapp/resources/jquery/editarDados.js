@@ -47,7 +47,7 @@ $(".dadosUsuario").on("click", function() {
 	
 	$.ajax ({
 		type: "GET",
-		url: "/importHair/atualizaUser",
+		url: "/atualizaUser",
 		data :{
 			"nome" : name,
 			"email" : email,

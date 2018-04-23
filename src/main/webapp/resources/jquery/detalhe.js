@@ -138,7 +138,7 @@ var verificaLogin = function() {
 				}
 				
 				if (resultado == "checkout") {
-					$(location).attr('href', "/importHair/confirmacao");
+					$(location).attr('href', "/confirmacao");
 				}
 			}
 		})

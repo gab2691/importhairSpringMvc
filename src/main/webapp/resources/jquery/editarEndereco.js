@@ -32,7 +32,7 @@ var atualizaEndereco = function() {
 	$.ajax({
 		
 		type: "POST",
-		url: "/importHair/atualizaEndereco",
+		url: "/atualizaEndereco",
 		data: {
 			"cidade" : cidade,
 			"uf" : uf,
@@ -80,7 +80,7 @@ var buscaEndereco = function() {
 	
 /*	$.ajax({
 		type : "GET",
-		url : "/importHair/buscaEndereco",
+		url : "/buscaEndereco",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"cep" : cep,

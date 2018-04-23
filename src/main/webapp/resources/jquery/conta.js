@@ -90,7 +90,7 @@ var cepAjax = function() {
 	$('.box-cadastro').LoadingOverlay("show", "slow")
 	$.ajax({
 		type : "GET",
-		url : "/importHair/buscaEndereco",
+		url : "/buscaEndereco",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"cep" : cep,
@@ -119,7 +119,7 @@ var verificaEmail = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/importHair/verificaEmail",
+		url : "/verificaEmail",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"email" : $(".input-cadastro-email").val(),
@@ -173,14 +173,14 @@ $(".btn-login").click(function() {
 		},
 		success : function(resultado) {
 			if (resultado == "confirmacao") {
-				$(location).attr('href', "/importHair/confirmacao");
+				$(location).attr('href', "/confirmacao");
 			}
 			
 			if (resultado == "conta") {
 				$(".box-login").addClass("remove-login");
 				$(".box-cadastro").addClass("remove-login");
 				$(".box-background").css("display", "none");
-				$(location).attr('href', "/importHair/minhaConta");
+				$(location).attr('href', "/minhaConta");
 				
 			}
 			
@@ -214,7 +214,7 @@ var showInformRecoverer = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/importHair/geraToken",
+		url : "/geraToken",
 
 		data : {
 			"email" : email,

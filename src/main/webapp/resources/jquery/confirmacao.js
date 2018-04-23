@@ -27,7 +27,7 @@ var cepAjaxAtualiza = function() {
 	$('.box-atualiza-endereco').LoadingOverlay("show", "slow")
 	$.ajax({
 		type : "GET",
-		url : "/importHair/buscaEndereco",
+		url : "/buscaEndereco",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"cep" : cep,
@@ -57,7 +57,7 @@ $("#UsuarioAtualizaCep").on("focusout", cepAjaxAtualiza)
 $(".btn-page-confirm").on("click",function(){
 	$.ajax({
 		type: "GET",
-		url: "/importHair/pagSeguro",
+		url: "/pagSeguro",
 		data: "",
 		
 		success: function(resultado) {

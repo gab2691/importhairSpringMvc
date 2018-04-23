@@ -27,7 +27,7 @@ var removeItem = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "http:/importHair/removeItem/",
+		url : "http:/removeItem/",
 		data : {"id" : $this.parent().find(".id-product").text()
 				},
 

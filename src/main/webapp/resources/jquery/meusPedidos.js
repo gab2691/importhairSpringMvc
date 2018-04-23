@@ -13,7 +13,7 @@ var showPedidoDetails = function() {
 	if ($this.parent().parent().parent().find(".datails-products").find(".descriptProduct").text().length == 0) {
 		$.ajax({
 			type : "GET",
-			url : "/importHair/pedidoDetalhes",
+			url : "/pedidoDetalhes",
 			data : {
 				"id" : id,
 			},
