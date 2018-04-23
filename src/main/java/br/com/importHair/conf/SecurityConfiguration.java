@@ -26,35 +26,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-	    http.authorizeRequests()
-	    .antMatchers("/").permitAll()
-	    .antMatchers("/addUsuario").permitAll()
-	    .antMatchers("/buscaEndereco").permitAll()
-	    .antMatchers("/carrinho/add").permitAll()
-	    .antMatchers("/login").permitAll()
-	    .antMatchers("/atualizaTotal").permitAll()
-	    .antMatchers("/atualizaSubTotal").permitAll()
-	    .antMatchers("/totalGeral").permitAll()
-	    .antMatchers("/calculaFrete").permitAll()
-	    .antMatchers("/atualizaQtn").permitAll()
-	    .antMatchers("/removeItem").permitAll()
-	    .antMatchers("/cartPage").permitAll()
-	    .antMatchers("/verificaEmail").permitAll()
-	    .antMatchers("/carrinho/detalhe").permitAll()
-	    .antMatchers("/recuperaSenha").permitAll()
-	    .antMatchers("/geraToken").permitAll()
-	    .antMatchers("/product/**").permitAll()
-	    .antMatchers("/recuperaSenha/token/**").permitAll()
-	    .antMatchers("/contaUsuario/atualizaSenha").permitAll()
-	    .antMatchers("/novaSenha").permitAll()
-	    .antMatchers("/loginCustom").permitAll()
-	    .antMatchers("/checkOut").permitAll()
-	    .antMatchers("/logout").permitAll()
-	    .anyRequest().authenticated()
-	    .and().formLogin().successHandler(customAuthenticationSuccessHandler)
-	    .failureHandler(customAuthenticationFailureHandler)
-	    ;
-	
+	    http.requiresChannel().antMatchers("/").requiresSecure();
 	    
 	}
 	

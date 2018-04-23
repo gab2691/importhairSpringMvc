@@ -5,9 +5,6 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<meta name="_csrf" content="${_csrf.token}"/>
-	<meta name="_csrf_header" content="${_csrf.headerName}"/>
-	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css\reset.css"/>">
 	<link rel="stylesheet" type="text/css" href="<c:url value="/resources/css/style.css"/>">
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
