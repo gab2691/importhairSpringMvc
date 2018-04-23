@@ -162,7 +162,7 @@ $(".btn-login").click(function() {
 
 	$.ajax({
 		type : "POST",
-		url : "/importHair/login",
+		url : "/login",
 		data : {
 			"username" : username,
 			"password" : password,
