@@ -132,7 +132,7 @@ public class AjaxRequestController {
 	}
 
 	@ResponseBody
-	@RequestMapping(value = "/cartPage", method = RequestMethod.GET)
+	@RequestMapping(value = "/cartPage/", method = RequestMethod.GET)
 	public ModelAndView cartPage() throws SQLException, SigepClienteException, RemoteException {
 		ModelAndView modelAndView = new ModelAndView("/pageCart");
 		List<PedidoItem> itens = pedido.getItens();

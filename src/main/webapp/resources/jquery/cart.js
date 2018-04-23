@@ -84,7 +84,7 @@ var ajaxCart = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "https:/importHair/cartPage/",
+		url : "https:/cartPage/",
 		data : {},
 	
 		success : function(resultado) {
