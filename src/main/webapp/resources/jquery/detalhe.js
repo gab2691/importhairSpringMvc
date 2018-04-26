@@ -160,7 +160,7 @@ $(".btn-page-check").on("click", verificaLogin);
 
 
 var pageCheckout = function() {
-	$(location).attr('href', "/checkOut");
+	$(location).attr('href', "/confirmacao");
 }
 
 $(".btn-cheout").on("click", pageCheckout)
