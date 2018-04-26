@@ -86,7 +86,9 @@
 	
 	<div class="box-cart-emprty">
 		<p class="text-empty-cart">Seu carrinho está vazio.</p>
-		
+		<button type="submit" class="btn-form-email btn-page-cart">
+				
+		</button>
 	</div>
 
 </tags:pageTemplate>
