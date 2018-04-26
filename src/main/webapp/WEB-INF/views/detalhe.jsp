@@ -76,8 +76,8 @@
 			</div>
 			<div class="inform-text-cart title-cart">total <span class="details-text-cart">R$ <span class="total-geral-ajax">${pedido.totalgeral}</span></span></div>
 			<div class="btns-page-cart">
-					<a class="btn-form-email btn-page-cart" href="/importHair" style="text-decoration:  none;">
-						<spam class="title-btn-email">continue comprando</spam>
+					<a class="btn-form-email btn-page-cart" href="/" style="text-decoration:  none;">
+						<span class="title-btn-email">continue comprando</span>
 					</a>	
 				<button class="btn-page-check"><spam class="title-btn-email title-btn-check">chek out</spam></button>
 			</div>
@@ -90,11 +90,7 @@
 			<a href="/">
 				<span class="title-btn-email">continue comprando</span>
 			</a>	
-		</button>
-		
-		<button class="btn-page-check">
-			<span class="title-btn-email title-btn-check">chek out</span>
-		</button>
+		</button>			
 	</div>
 
 </tags:pageTemplate>
