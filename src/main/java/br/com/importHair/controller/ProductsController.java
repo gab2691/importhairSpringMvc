@@ -21,7 +21,6 @@ public class ProductsController {
 	
 	@RequestMapping("/product")
 	public ModelAndView produtos(Integer id){
-		System.out.println(id);
 		Produtos produto = pDao.produto(id);
 		ModelAndView modelAndView = new ModelAndView("/produto");
 		modelAndView.addObject("produto", produto);

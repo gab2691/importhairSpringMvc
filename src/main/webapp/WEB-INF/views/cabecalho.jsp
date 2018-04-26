@@ -58,7 +58,7 @@
 			
 			
 			
-		<form action="/addUsuario" method="post">
+		<form action="/importHair/addUsuario" method="post">
 			<div class="box-cadastro">
 				<div class="box-title-login">
 					<p class="title-login">Cadastro</p>
@@ -297,12 +297,12 @@
 		</div>
 		
 		<div class="btns-cart-header">		
-			<button type="submit" class="btn-cart-cont">
-				<a href="/" style="text-decoration:  none;">
-					<spam class="title-btn-cart">shopping cart</spam>
-				</a>	
-			</button>			
-			<button class="btn-cart-check"><spam class="title-btn-cart">chek out</spam></button>
+			<a class="btn-cart-cont" href="carrinho/detalhe" style="text-decoration:  none;">
+				<span class="title-btn-cart">shopping cart</span>
+			</a>	
+			<a class="btn-cart-check" href="confirmacao" style="text-decoration:  none;">
+				<span class="title-btn-cart">chek out</span>
+			</a>
 		</div>
 	
 	</div>

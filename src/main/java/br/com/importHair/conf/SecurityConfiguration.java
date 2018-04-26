@@ -35,7 +35,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
 	    .antMatchers("/atualizaTotal").permitAll()
 	    .antMatchers("/atualizaSubTotal").permitAll()
 	    .antMatchers("/totalGeral").permitAll()
-	    .antMatchers("/calculaFrete").permitAll()
+	    .antMatchers("/calculaFrete**").permitAll()
 	    .antMatchers("/atualizaQtn").permitAll()
 	    .antMatchers("/removeItem").permitAll()
 	    .antMatchers("/cartPage").permitAll()

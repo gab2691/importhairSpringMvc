@@ -78,16 +78,33 @@ public class AjaxRequestController {
 	@RequestMapping(value = "/atualizaTotal", method = RequestMethod.GET)
 	public Map<String, BigDecimal> atualizaTotal(Integer id, Integer quantidade) {
 		HashMap<String, BigDecimal> map = new HashMap<String, BigDecimal>();
-
+		
+		
 		Produtos produto = dao.produto(id);
 		PedidoItem pedidoItem = new PedidoItem(produto);
 		pedidoItem.setQuantidade(quantidade);
+		
+		if(quantidade.equals(null)){
+			BigDecimal subTotal = pedido.getSubTotal();
+			
+			BigDecimal totalgeral = pedido.getTotalgeral();
 
+			BigDecimal qtn = new BigDecimal(pedido.getQuantidade());
+
+			map.put("subTotal", subTotal);
+			map.put("totalgeral", totalgeral);
+			map.put("qtn", qtn);
+			return map;
+			
+		}
+		
+		
 		PedidoItem atualizaItem = pedido.atualizaItem(pedidoItem);
+		
 		BigDecimal valorTotalItem = pedido.getValorTotalItem(atualizaItem);
-
+		
 		BigDecimal subTotal = pedido.getSubTotal();
-
+		
 		BigDecimal totalgeral = pedido.getTotalgeral();
 
 		BigDecimal qtn = new BigDecimal(pedido.getQuantidade());

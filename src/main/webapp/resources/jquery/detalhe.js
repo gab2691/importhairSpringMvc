@@ -16,13 +16,15 @@ var somaQtn = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/atualizaTotal",
+		url : "atualizaTotal",
 		data : {
 			"id" : $(this).parent().find(".id").val(),
 			"quantidade" : qtn + 1,
 		},
 
 		success : function(resultado) {
+			
+			
 			$this.parent().parent().find(".vl").text(resultado.valorTotalItem);
 			$(".sub-total-full").text(resultado.subTotal);
 
@@ -43,10 +45,12 @@ var subtraiQtn = function() {
 	if ($this.parent().find(".qtn-car").val() == 0) {
 		$(this).parent().parent().parent().fadeOut();
 	}
+	
+	
 
 	$.ajax({
 		type : "GET",
-		url : "/atualizaTotal",
+		url : "atualizaTotal",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"id" : $(this).parent().find(".id").val(),
@@ -60,6 +64,13 @@ var subtraiQtn = function() {
 			$(".total-geral-ajax").html(resultado.totalgeral);
 
 			$(".bag-quant").html(resultado.qtn);
+			
+			if ($(".bag-quant").text() == "0") {
+				$(".box-full-cart").html("<p class='text-carty-empety-black'>Seu carrinho está vazio, volte e encha seu carrinho !!!</p>"
+						+ "<a class='btn-form-email btn-page-cart' href='/importHair' style='text-decoration:  none;'> <spam class='title-btn-email'>continue comprando</spam></a>");
+				
+				$(".btn-form-email").on("mouseenter", addBtnEmailColor).on("mouseleave",removeBtnEmailColor);
+			}
 		}
 	})
 }
@@ -125,7 +136,7 @@ var verificaLogin = function() {
 
 		$.ajax({
 			type : "GET",
-			url : "/checkOut",
+			url : "checkOut",
 			data : {},
 
 			success : function(resultado) {

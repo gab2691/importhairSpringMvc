@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import br.com.importHair.daos.EnderecoDao;
 import br.com.importHair.daos.UsuarioDao;
 import br.com.importHair.models.Endereco;
+import br.com.importHair.models.Pedido;
 import br.com.importHair.models.Usuario;
 
 @Controller
@@ -28,6 +29,9 @@ public class AddUsuarioController {
 
 	@Autowired
 	private UsuarioDao UsuaDao;
+	
+	@Autowired
+	private Pedido pedido;
 
 	@RequestMapping(value = "/addUsuario", method = RequestMethod.POST)
 	public ModelAndView adicionaUsuario(Usuario usuario, Endereco endereco, HttpServletRequest request){
@@ -42,6 +46,11 @@ public class AddUsuarioController {
 		Usuario usuarioCadastrado = UsuaDao.addUsuario(usuario);
 		endereco.setUsuario(usuarioCadastrado);
 		endDao.addEndereco(endereco);
+		
+		
+		if(pedido.getItens().size() >=1 ){
+			return new ModelAndView("/confirmacao");
+		}
 		
 		try {
 			request.login(usuarioCadastrado.getEmail(), senha);

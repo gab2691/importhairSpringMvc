@@ -418,7 +418,7 @@
 }
 
 .textarea-form-email {
-	width: 68em;
+	width: 97%;
 	font-family: sans-serif;
 	font-weight: bold;
 	border: 1px solid rgba(42, 38, 53, 0.2);
@@ -691,27 +691,32 @@
 }
 
 .btn-cart-cont {
-	width: 25em;
+	width: 20em;
 	background-color: transparent;
 	border: 2px solid #446084;
 	cursor: pointer;
-	height: 2.9em;
+	height: 2em;
+	display: flex;
+	align-items: center;
 }
 
 .btn-cart-check {
-	width: 25em;
+	width: 20em;
 	background-color: #446084;
 	border: 2px solid #446084;
 	cursor: pointer;
-	height: 2.9em;
+	height: 2em;
 	color: white;
+	display: flex;
+	align-items: center;
 }
 
 .title-btn-cart {
-	font-size: 1.2em;
+	font-size: .9em;
 	text-transform: uppercase;
 	font-family: "Lato", sans-serif;
 	color: white;
+	margin: auto;
 }
 
 .subTotal-cart-header {
@@ -1052,11 +1057,11 @@
 	display: flex;
 	flex-flow: column;
 	position: absolute;
-	height: 10em;
+	height: 12em;
 	border-radius: 10px;
 	border: 1px solid #ddd;
 	top: 7em;
-	width: 16em;
+	width: 10em;
 	justify-content: space-between;
 	left: 45em;
 	background-color: rgba(0, 7, 20, 0.8);
@@ -1193,21 +1198,31 @@
 	OVERFLOW: auto;
 }
 
-.efeitos-colaterais{
+.efeitos-colaterais {
 	
 }
 
-.title-efeitos{
+.title-efeitos {
 	margin-bottom: 1em;
 }
 
 .box-image-descrição {
 	margin: auto;
-    width: 33em;
-    margin-bottom: 2em;
+	width: 33em;
+	margin-bottom: 2em;
 }
 
 .image-product-descricao {
 	width: 33em;
 	height: 13em;
+}
+
+.text-carty-empety-black {
+	color: black;
+	display: flex;
+	height: 3em;
+	margin: auto;
+	font-size: 1.2em;
+	font-family: sans-serif;
+	margin-top: 1.4em;
 }

@@ -168,8 +168,8 @@
 			</div>
 			
 			<button type="submit" class="btn-form-email btn-page-confirm">
-				<a  style="text-decoration:  none;margin:  auto;">
-					<spam class="title-btn-email">Finalizar pedido</spam>
+				<a href="/pagSeguro" style="text-decoration:  none;margin:  auto;">
+					<span class="title-btn-email">Finalizar pedido</span>
 				</a>	
 			</button>
 		</div>

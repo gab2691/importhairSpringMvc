@@ -139,9 +139,7 @@ public class Pedido {
 	}
 	
 	public BigDecimal getValorTotalItem(PedidoItem pedidoItem){
-		BigDecimal quantidade = new BigDecimal(pedidoItem.getQuantidade());
-		BigDecimal preco = pedidoItem.getProduto().getPreco();
-		BigDecimal total = preco.multiply(quantidade);
+		BigDecimal total = pedidoItem.getProduto().getPreco().multiply(new BigDecimal(pedidoItem.getQuantidade()));
 		return total;
 	}
 	
@@ -160,13 +158,25 @@ public class Pedido {
 	public BigDecimal getSubTotal(){
 		BigDecimal totalItem =  BigDecimal.ZERO;
 		for (PedidoItem pedidoItem : itens) {
+			
 			totalItem = totalItem.add(getValorTotalItem(pedidoItem));
 		}
-		
 		return totalItem;
 		
 	}
 	
+	public BigDecimal getTotal() {
+		return Total;
+	}
+
+	public void setTotal(BigDecimal total) {
+		Total = total;
+	}
+
+	public void setSubTotal(BigDecimal subTotal) {
+		this.subTotal = subTotal;
+	}
+
 	public BigDecimal getTotalgeral(){
 		BigDecimal Total = this.getSubTotal();
 		if(this.getFrete() ==  null){
@@ -178,10 +188,10 @@ public class Pedido {
 	
 	
 	public PedidoItem atualizaItem(PedidoItem pedidoItem){
-		
 		for (PedidoItem item : itens) {
 			if(pedidoItem.equals(item) && pedidoItem.getQuantidade() > 0){
 				item.setQuantidade(pedidoItem.getQuantidade());
+				
 				return item;
 			}
 			
@@ -197,17 +207,14 @@ public class Pedido {
 	public void removeItem(PedidoItem item){
 		itens.remove(item);
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((data_pedido == null) ? 0 : data_pedido.hashCode());
-		result = prime * result + ((frete == null) ? 0 : frete.hashCode());
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((Total == null) ? 0 : Total.hashCode());
 		result = prime * result + ((itens == null) ? 0 : itens.hashCode());
-		result = prime * result + ((pagamento == null) ? 0 : pagamento.hashCode());
-		result = prime * result + ((status == null) ? 0 : status.hashCode());
+		result = prime * result + ((subTotal == null) ? 0 : subTotal.hashCode());
 		return result;
 	}
 
@@ -220,49 +227,26 @@ public class Pedido {
 		if (getClass() != obj.getClass())
 			return false;
 		Pedido other = (Pedido) obj;
-		if (data_pedido == null) {
-			if (other.data_pedido != null)
+		if (Total == null) {
+			if (other.Total != null)
 				return false;
-		} else if (!data_pedido.equals(other.data_pedido))
-			return false;
-		if (frete == null) {
-			if (other.frete != null)
-				return false;
-		} else if (!frete.equals(other.frete))
-			return false;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
+		} else if (!Total.equals(other.Total))
 			return false;
 		if (itens == null) {
 			if (other.itens != null)
 				return false;
 		} else if (!itens.equals(other.itens))
 			return false;
-		if (pagamento == null) {
-			if (other.pagamento != null)
+		if (subTotal == null) {
+			if (other.subTotal != null)
 				return false;
-		} else if (!pagamento.equals(other.pagamento))
-			return false;
-		if (status == null) {
-			if (other.status != null)
-				return false;
-		} else if (!status.equals(other.status))
+		} else if (!subTotal.equals(other.subTotal))
 			return false;
 		return true;
 	}
 
-	public BigDecimal getTotal() {
-		return Total;
-	}
 
-	public void setTotal(BigDecimal total) {
-		Total = total;
-	}
+	
 
-	public void setSubTotal(BigDecimal subTotal) {
-		this.subTotal = subTotal;
-	}
 	
 }

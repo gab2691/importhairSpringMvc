@@ -215,3 +215,10 @@ var showBoxComoUsar = function() {
 }
 
 $(".link-EfeitosColaterais").on("click", showBoxComoUsar)
+
+
+var pageProduct = function() {
+	$(location).attr('href', "/product/?id=23");
+}
+
+$(".btn-slider").on("click", pageProduct)

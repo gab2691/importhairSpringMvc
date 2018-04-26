@@ -23,20 +23,24 @@ $(".btn-cart-check").on("mouseenter", addColorBtn).on("mouseleave",
 var removeItem = function() {
 	var $this = $(this);
 
-	$this.parent().find("id-product").text();
-
+	$this.parent().find(".id-product").text();
+	
 	$.ajax({
 		type : "GET",
-		url : "http:/removeItem/",
+		url : "/removeItem",
 		data : {"id" : $this.parent().find(".id-product").text()
 				},
 
 	success : function(resultado) {
 		$this.parent().fadeOut();
-
+		
+		if ($(".bag-quant").text() == "0")
+			return false,
+		
+		
 		$.ajax({
 			type : "GET",
-			url : "http://atualizaTotal/",
+			url : "/atualizaTotal",
 			data : {},
 	
 			success : function(resultado) {
@@ -46,10 +50,7 @@ var removeItem = function() {
 				$(".total-geral-ajax").html(resultado.totalgeral);
 	
 				$(".bag-quant").html(resultado.qtn);
-	
-				if ($(".verificarTtal").text() == "0") {
-					$(".container-car-box").html("<p class=text-cart-empty>Seu carrinho está vazio</p>");
-					}
+				
 				}
 			})
 		}
@@ -84,7 +85,7 @@ var ajaxCart = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/cartPage/",
+		url : "/cartPage",
 		data : {},
 	
 		success : function(resultado) {
