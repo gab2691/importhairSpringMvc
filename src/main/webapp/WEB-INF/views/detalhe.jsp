@@ -87,7 +87,13 @@
 	<div class="box-cart-emprty">
 		<p class="text-empty-cart">Seu carrinho está vazio.</p>
 		<button type="submit" class="btn-form-email btn-page-cart">
-				
+			<a href="/">
+				<span class="title-btn-email">continue comprando</span>
+			</a>	
+		</button>
+		
+		<button class="btn-page-check">
+			<span class="title-btn-email title-btn-check">chek out</span>
 		</button>
 	</div>
 
