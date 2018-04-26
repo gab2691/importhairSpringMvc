@@ -16,37 +16,36 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class JPAConfiguration {
 
 	@Bean
-    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-        LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
-        JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+	public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+		LocalContainerEntityManagerFactoryBean factoryBean = new LocalContainerEntityManagerFactoryBean();
+		JpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
 
-        factoryBean.setJpaVendorAdapter(vendorAdapter);
+		factoryBean.setJpaVendorAdapter(vendorAdapter);
 
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
+		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-        dataSource.setUsername("root");
-        dataSource.setPassword("root");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/importhair");
+		dataSource.setUsername("b4052cdb56a2c4");
+		dataSource.setPassword("d2748571");
+		dataSource.setUrl("jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_ddf2ac4e9ba5c6c?reconnect=true");
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 
-        factoryBean.setDataSource(dataSource);
+		factoryBean.setDataSource(dataSource);
 
-        Properties props = new Properties();
-        props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
-        props.setProperty("hibernate.show_sql", "false");
-        props.setProperty("hibernate.hbm2ddl.auto", "update");
+		Properties props = new Properties();
+		props.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQL5Dialect");
+		props.setProperty("hibernate.show_sql", "false");
+		props.setProperty("hibernate.hbm2ddl.auto", "update");
 
-        factoryBean.setJpaProperties(props);
+		factoryBean.setJpaProperties(props);
 
-        factoryBean.setPackagesToScan("br.com.importHair.models");
+		factoryBean.setPackagesToScan("br.com.importHair.models");
 
-        return factoryBean;
-    }
-	
+		return factoryBean;
+	}
+
 	@Bean
-	public JpaTransactionManager transactionManager (EntityManagerFactory enf){
+	public JpaTransactionManager transactionManager(EntityManagerFactory enf) {
 		return new JpaTransactionManager(enf);
-				
+
 	}
 }
-
