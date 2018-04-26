@@ -58,7 +58,7 @@
 			
 			
 			
-		<form action="/importHair/addUsuario" method="post">
+		<form action="/addUsuario" method="post">
 			<div class="box-cadastro">
 				<div class="box-title-login">
 					<p class="title-login">Cadastro</p>
