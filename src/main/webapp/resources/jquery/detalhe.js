@@ -16,7 +16,7 @@ var somaQtn = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "atualizaTotal",
+		url : "/atualizaTotal",
 		data : {
 			"id" : $(this).parent().find(".id").val(),
 			"quantidade" : qtn + 1,
@@ -50,7 +50,7 @@ var subtraiQtn = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "atualizaTotal",
+		url : "/atualizaTotal",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"id" : $(this).parent().find(".id").val(),
@@ -136,7 +136,7 @@ var verificaLogin = function() {
 
 		$.ajax({
 			type : "GET",
-			url : "checkOut",
+			url : "/checkOut",
 			data : {},
 
 			success : function(resultado) {
@@ -158,9 +158,3 @@ var verificaLogin = function() {
 
 $(".btn-page-check").on("click", verificaLogin);
 
-
-var pageCheckout = function() {
-	$(location).attr('href', "/confirmacao");
-}
-
-$(".btn-cheout").on("click", pageCheckout)

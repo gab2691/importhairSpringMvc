@@ -37,12 +37,12 @@
 						
 						<div class="btns-box-car">
 							<div class="box-btn menos">
-								<spam class="simbol-box">-</spam>
+								<span class="simbol-box">-</span>
 							</div>
 							<input type="text" class="qtn-car" value="${item.quantidade}">
 							<input type="hidden" class="id" value="${item.produto.id}">
 							<div class="box-btn mais">
-								<spam class="simbol-box">+</spam>
+								<span class="simbol-box">+</span>
 							</div>
 						</div>
 						
@@ -57,7 +57,7 @@
 		<div class="container-resume-cart">
 			<div class="inform-text-cart title-cart">subtotal 
 				<span class="details-text-cart">R$ 
-					<spam class="sub-total-full">${pedido.subTotal}</spam>
+					<span class="sub-total-full">${pedido.subTotal}</span>
 				</span>
 			</div>
 			
@@ -69,7 +69,7 @@
 				<div class="box-frete">
 					<input type="text" name="cep" class="input-caep" autofocus="autofocus">
 					<button class="btn-form-email btn-frete">
-							<spam class="title-btn-email">ok</spam>
+							<span class="title-btn-email">ok</span>
 					</button>
 				</div>
 				
@@ -79,7 +79,9 @@
 					<a class="btn-form-email btn-page-cart" href="/" style="text-decoration:  none;">
 						<span class="title-btn-email">continue comprando</span>
 					</a>	
-				<button class="btn-page-check"><spam class="title-btn-email title-btn-check">chek out</spam></button>
+				<button class="btn-page-check">
+					<span class="title-btn-email title-btn-check">chek out</span>
+				</button>
 			</div>
 		</div>
 	</div>
