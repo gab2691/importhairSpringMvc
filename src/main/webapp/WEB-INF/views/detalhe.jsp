@@ -87,7 +87,7 @@
 	<div class="box-cart-emprty">
 		<p class="text-empty-cart">Seu carrinho está vazio.</p>
 		<button type="submit" class="btn-form-email btn-page-cart">
-			<a href="/importHair" style="text-decoration:  none;">
+			<a href="/" style="text-decoration:  none;">
 				<spam class="title-btn-email">continue comprando</spam>
 			</a>	
 		</button>
