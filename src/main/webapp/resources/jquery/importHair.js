@@ -218,7 +218,7 @@ $(".link-EfeitosColaterais").on("click", showBoxComoUsar)
 
 
 var pageProduct = function() {
-	$(location).attr('href', "/product/?id=23");
+	$(location).attr('href', "/product/?id=22");
 }
 
 $(".btn-slider").on("click", pageProduct)
