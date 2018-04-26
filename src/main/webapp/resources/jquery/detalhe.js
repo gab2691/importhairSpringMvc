@@ -157,3 +157,10 @@ var verificaLogin = function() {
 }	
 
 $(".btn-page-check").on("click", verificaLogin);
+
+
+var pageCheckout = function() {
+	$(location).attr('href', "/confirmacao");
+}
+
+$(".btn-cheout").on("click", pageCheckout)
