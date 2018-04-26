@@ -123,17 +123,17 @@ var showBoxConta = function() {
 
 	if ($(".name-user").length == 1) {
 		$(".box-account-header").html(
-						"<a href='/importHair/minhaConta' class='link-product-header link-account-header'> "
+						"<a href='/minhaConta' class='link-product-header link-account-header'> "
 								+ "<div class='box-options-products'>"
 								+ "<p class='name-products-header'>Minha conta</p>"
 								+ "</div>"
 								+ "</a> "
-								+ "<a href='/importHair/meusPedidos' class='link-product-header link-account-header'> "
+								+ "<a href='/meusPedidos' class='link-product-header link-account-header'> "
 								+ "<div class='box-options-products'>"
 								+ "<p class='name-products-header'>Meus Pedidos</p>"
 								+ "</div>"
 								+ "</a>"
-								+ "<a href='/importHair/logout' class='link-product-header link-account-header'> "
+								+ "<a href='/logout' class='link-product-header link-account-header'> "
 								+ "<div class='box-options-products'>"
 								+ "<p class='name-products-header'>Sair</p>"
 								+ "</div>" + "</a>")

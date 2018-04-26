@@ -261,13 +261,13 @@
 					
 					
 					<span class="customer-register-link-header">cliente novo? - Criar conta</span>
-					<!-- <a href="/importHair/minhaConta" class="link-product-header">
+					<!-- <a href="/minhaConta" class="link-product-header">
 						<div class="box-options-products">
 							<p class="name-products-header">Minha conta</p>
 						</div>
 					</a>
 					
-					<a href="/importHair/meusPedidos" class="link-product-header">
+					<a href="/meusPedidos" class="link-product-header">
 						<div class="box-options-products">
 							<p class="name-products-header">Meus pedidos</p>
 						</div>			
