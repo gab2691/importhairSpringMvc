@@ -21,7 +21,7 @@
 			<div class="box-conta-opcao">
 				<a href="/editarDados" class="link-conta">
 					<div class="opcoes-conta">
-						<p class="nome-opcao text-page-edit">Meus dados</p>
+						<p class="nome-opcao">Meus dados</p>
 					</div>
 				</a>
 				
