@@ -37,7 +37,7 @@
 					</div>
 				</a>		
 				<a href="/logout" class="link-conta">
-					<div class="opcoes-conta page-edit">
+					<div class="opcoes-conta">
 						<p class="nome-opcao text-page-edit">sair</p>
 					</div>
 				</a>
