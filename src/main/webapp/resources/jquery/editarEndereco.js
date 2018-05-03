@@ -78,7 +78,7 @@ var buscaEndereco = function() {
 	
 	$('.box-editarEndereco').LoadingOverlay("show", "slow");
 	
-/*	$.ajax({
+	$.ajax({
 		type : "GET",
 		url : "/buscaEndereco",
 		contentType : "application/json; charset=utf-8",
@@ -98,7 +98,7 @@ var buscaEndereco = function() {
 			}, 1500);
 		},
 
-	});*/
+	});
 	if (cep.length == 0) {
 		console.log("valor nullo")
 		return false;
