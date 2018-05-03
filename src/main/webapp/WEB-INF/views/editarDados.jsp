@@ -19,19 +19,19 @@
 			</div>
 			
 			<div class="box-conta-opcao">
-				<a href="/importHair/editarDados" class="link-conta">
+				<a href="/editarDados" class="link-conta">
 					<div class="opcoes-conta page-edit">
 						<p class="nome-opcao text-page-edit">Meus dados</p>
 					</div>
 				</a>
 				
-				<a href="/importHair/meusPedidos" class="link-conta">
+				<a href="/meusPedidos" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">pedidos</p>
 					</div>
 				</a>
 				
-				<a href="/importHair/editarEndereco" class="link-conta">
+				<a href="/editarEndereco" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">Endereços</p>
 					</div>
@@ -77,7 +77,7 @@
 			<div class="box-title-senha">
 				<p class="text-title-senha">Alteração de senha</p>
 			</div>
-			<form action="/importHair/atualizaSenha" method="post">
+			<form action="/atualizaSenha" method="post">
 				<div class="container-alteraSenha">
 					<div class="box-label-editaDados">
 						<label class="label-input-login label-editarDados" for="UsuarioSenhaAtual">Senha atual</label>

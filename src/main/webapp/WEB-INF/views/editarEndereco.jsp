@@ -19,19 +19,19 @@
 			</div>
 			
 			<div class="box-conta-opcao">
-				<a href="/importHair/editarDados" class="link-conta">
+				<a href="/editarDados" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">Meus dados</p>
 					</div>
 				</a>
 				
-				<a href="/importHair/meusPedidos" class="link-conta">
+				<a href="/meusPedidos" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">pedidos</p>
 					</div>
 				</a>
 				
-				<a href="/importHair/editarEndereco" class="link-conta">
+				<a href="/editarEndereco" class="link-conta">
 					<div class="opcoes-conta page-edit">
 						<p class="nome-opcao text-page-edit">Endereços</p>
 					</div>
