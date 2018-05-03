@@ -5,7 +5,7 @@
 <%@ taglib tagdir="/WEB-INF/tags" prefix="tags" %>
 
 <tags:pageTemplate>
-<form action="/importHair/contaUsuario/atualizaSenha" method="post">
+<form action="/contaUsuario/atualizaSenha" method="post">
 	<div class="formAlteraSenha">
 		<div class="box-title-login titleNovaSenha">
 			<p class="title-login">Digite a senha nova</p>
