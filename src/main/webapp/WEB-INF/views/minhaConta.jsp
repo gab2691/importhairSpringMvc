@@ -19,19 +19,19 @@
 			</div>
 			
 			<div class="box-conta-opcao">
-				<a href="/importHair/editarDados" class="link-conta">
+				<a href="/editarDados" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">Meus dados</p>
 					</div>
 				</a>
 				
-				<a href="/importHair/meusPedidos" class="link-conta">
+				<a href="/meusPedidos" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">pedidos</p>
 					</div>
 				</a>
 				
-				<a href="/importHair/editarEndereco" class="link-conta">
+				<a href="/editarEndereco" class="link-conta">
 					<div class="opcoes-conta">
 						<p class="nome-opcao">Endereços</p>
 					</div>
@@ -55,7 +55,7 @@
 						Edite seus dados pessoas com segurança e praticidade
 					</p>
 				</div>
-				<a href="/importHair/editarDados" class="link-myAccount">
+				<a href="/editarDados" class="link-myAccount">
 					<div class="link-box">
 						<p>Continuar</p>
 						<hr class="linha-link-box linha-myAccount">
@@ -75,7 +75,7 @@
 					</p>
 				</div>
 				
-				<a href="/importHair/meusPedidos" class="link-myAccount">
+				<a href="/meusPedidos" class="link-myAccount">
 					<div class="link-box">
 						<p>Continuar</p>
 						<hr class="linha-link-box linha-myAccount">
@@ -95,7 +95,7 @@
 					</p>
 				</div>
 				
-				<a href="/importHair/editarEndereco" class="link-myAccount">
+				<a href="/editarEndereco" class="link-myAccount">
 					<div class="link-box">
 						<p>Continuar</p>
 						<hr class="linha-link-box linha-myAccount">
