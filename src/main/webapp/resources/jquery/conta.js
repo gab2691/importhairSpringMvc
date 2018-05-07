@@ -131,7 +131,7 @@ var verificaEmail = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/importHair/verificaEmail",
+		url : "/verificaEmail",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"email" : $(".input-cadastro-email").val(),
