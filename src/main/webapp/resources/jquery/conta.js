@@ -242,3 +242,26 @@ var showInformRecoverer = function() {
 }
 
 $(".btn-envia-senha").on("click", showInformRecoverer)
+
+var nomeCompleto = function() {
+	var sobrenome = $(this).val().split(" ");
+	console.log(sobrenome.length);
+	if (sobrenome[1] == "" || sobrenome.length == 1){
+		$(".box-warn-name").removeClass("remove-login");
+		$(".box-warn-name").removeClass("show-login");
+		$(".box-warn-name").addClass("show-login");
+		$(".btn-cadastro").attr("disabled","disabled");
+		$(".btn-cadastro").removeClass("btn-cadastro-color");
+		
+		setTimeout(function() {
+			$(".box-warn-name").addClass("remove-login");
+		},1500);
+	}
+	
+	else{
+		$(".btn-cadastro").attr("disabled", false);
+		$(".btn-cadastro").addClass("btn-cadastro-color");
+	}
+};
+
+$("#UsuarioName").on("focusout", nomeCompleto); 

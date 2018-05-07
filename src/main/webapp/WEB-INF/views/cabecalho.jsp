@@ -68,6 +68,10 @@
 					<div class="box-label-login label-cadastro">
 						<label class="label-input-login" for="UsuarioName">Nome Completo</label>
 						<input class="input-inform input-cadastro" id="UsuarioName" name="nome" type="text" required="required">
+						<div class="box-warn-name">
+							<p class="text-warn-name">Favor colocar o sobrenome!!!!</p>
+						</div>
+						
 					</div>
 					
 					<div class="box-label-login label-cadastro">

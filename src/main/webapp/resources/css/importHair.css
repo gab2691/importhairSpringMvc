@@ -914,6 +914,8 @@
 .btn-cadastro {
 	width: 88%;
 	margin-bottom: 1.4em;
+	background-color: #D8D8D8;
+	color: rgba(0, 0, 0, .5);
 }
 
 .user-check {
@@ -1225,4 +1227,33 @@
 	font-size: 1.2em;
 	font-family: sans-serif;
 	margin-top: 1.4em;
+}
+
+#UsuarioName {
+	position: relative;
+}
+
+.box-warn-name {
+	position: absolute;
+	z-index: 3;
+	right: 31em;
+	background-color: rgba(0, 44, 44, 0.9);
+	bottom: 22.3em;
+	height: 2em;
+	width: 23em;
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.text-warn-name {
+	font-size: .9em;
+	margin: auto;
+	color: white;
+	text-transform: uppercase;
+	font-family: "Montserrat", "HelveticaNeue", "Helvetica Neue", Helvetica,
+		Arial, sans-serif;
+	font-weight: 600;
 }

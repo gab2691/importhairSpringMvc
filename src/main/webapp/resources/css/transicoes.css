@@ -151,3 +151,9 @@
 	color: white;
 	transition: transform .25s;
 }
+
+
+.btn-cadastro-color{
+	background: #34b0b0;
+	color: white; 
+}
