@@ -103,6 +103,9 @@
 					<div class="box-label-login label-cadastro">
 						<label class="label-input-login" for="UsuarioCep">CEP</label>
 						<input class="input-inform input-cadastro" id="UsuarioCep" type="text" name="cep" required="required" min="9" max="9">
+						<div class="box-warn-cep">
+							<p class="text-warn-cep">Favor colocar o um cep valido</p>
+						</div>
 					</div>
 					
 				</div>	

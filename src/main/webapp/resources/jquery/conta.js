@@ -4,6 +4,7 @@ var header = $("meta[name='_csrf_header']").attr("content");
 $(document).ready(function() {
 	$("#UsuarioCep").mask('00000-000');
 	$("#UsuarioTel").mask('(00)00000-0000');
+	$(".btn-cadastro").attr("disabled","disabled");
 });
 
 var showLogin = function() {
@@ -82,8 +83,19 @@ $(".customer-register-link").on("click", showCadastro)
 var cepAjax = function() {
 	var cep = $(this).val();
 
-	if ($(this).on("focusout").val().length <= 9
-			&& $("#UsuarioBairro").val().length > 1) {
+	if ($(this).on("focusout").val().length <= 8){
+		$(".box-warn-cep").removeClass("remove-login");
+		$(".box-warn-cep").removeClass("show-login");
+		$(".box-warn-cep").addClass("show-login");
+		
+		setTimeout(function() {
+			$(".box-warn-cep").addClass("remove-login");
+		},1500);
+		
+		return false;
+	}
+	
+	if ($(this).on("focusout").val().length <= 9 && $("#UsuarioBairro").val().length > 1) {
 		return false;
 	}
 
@@ -119,7 +131,7 @@ var verificaEmail = function() {
 
 	$.ajax({
 		type : "GET",
-		url : "/verificaEmail",
+		url : "/importHair/verificaEmail",
 		contentType : "application/json; charset=utf-8",
 		data : {
 			"email" : $(".input-cadastro-email").val(),
