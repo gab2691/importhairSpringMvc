@@ -67,7 +67,7 @@ var subtraiQtn = function() {
 			
 			if ($(".bag-quant").text() == "0") {
 				$(".box-full-cart").html("<p class='text-carty-empety-black'>Seu carrinho está vazio, volte e encha seu carrinho !!!</p>"
-						+ "<a class='btn-form-email btn-page-cart' href='/importHair' style='text-decoration:  none;'> <spam class='title-btn-email'>continue comprando</spam></a>");
+						+ "<a class='btn-form-email btn-page-cart' href='' style='text-decoration:  none;'> <spam class='title-btn-email'>continue comprando</spam></a>");
 				
 				$(".btn-form-email").on("mouseenter", addBtnEmailColor).on("mouseleave",removeBtnEmailColor);
 			}

@@ -6,7 +6,7 @@
 
 <tags:pageTemplate>
 
-	<form action="/importHair/atualizaUsuario" method="post">
+	<form action="/atualizaUsuario" method="post">
 		<div class="box-atualiza-user">
 			<div class="box-title-login">
 				<p class="title-login">Informações pessoais</p>
@@ -44,7 +44,7 @@
 	</form>
 	
 	
-	<form action="/importHair/atualizaEndereco" method="post">
+	<form action="/atualizaEndereco" method="post">
 		<div class="box-atualiza-endereco">
 			<div class="box-title-login">
 				<p class="title-login">Informações de Entrega</p>
@@ -168,7 +168,7 @@
 			</div>
 			
 			<button type="submit" class="btn-form-email btn-page-confirm">
-				<a href="/pagSeguro" style="text-decoration:  none;margin:  auto;">
+				<a href="" style="text-decoration:  none;margin:  auto;">
 					<span class="title-btn-email">Finalizar pedido</span>
 				</a>	
 			</button>

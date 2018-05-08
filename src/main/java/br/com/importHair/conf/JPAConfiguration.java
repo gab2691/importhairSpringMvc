@@ -24,10 +24,9 @@ public class JPAConfiguration {
 
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
 
-
-		dataSource.setUsername("b4052cdb56a2c4");
-		dataSource.setPassword("d2748571");
-		dataSource.setUrl("jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_ddf2ac4e9ba5c6c?reconnect=true");
+    	dataSource.setUsername("b4052cdb56a2c4");
+        dataSource.setPassword("d2748571");
+        dataSource.setUrl("jdbc:mysql://us-cdbr-iron-east-05.cleardb.net/heroku_ddf2ac4e9ba5c6c?reconnect=true");
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 
         factoryBean.setDataSource(dataSource);

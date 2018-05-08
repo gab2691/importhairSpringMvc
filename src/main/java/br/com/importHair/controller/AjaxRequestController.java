@@ -13,6 +13,8 @@ import javax.xml.rpc.ServiceException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
+import org.springframework.mail.MailSender;
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.security.web.bind.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
@@ -73,6 +75,9 @@ public class AjaxRequestController {
 	
 	@Autowired
 	private PedidoDao Pdao;
+	
+	@Autowired
+	private MailSender sender;
 
 	@ResponseBody
 	@RequestMapping(value = "/atualizaTotal", method = RequestMethod.GET)
@@ -205,7 +210,7 @@ public class AjaxRequestController {
 		String verificaUsuario = Udao.verificaUsuario(email);
 		if(verificaUsuario.equals("true")){
 			Usuario usuario = Udao.BuscaUsuario(email);
-			return "http://localhost:8080/importHair/recuperaSenha/token/?token=" + usuario.getHashRecovere();
+			return "http://recuperaSenha/token/?token=" + usuario.getHashRecovere();
 		}
 		return verificaUsuario;
 	}
@@ -251,7 +256,7 @@ public class AjaxRequestController {
 		Checkout checkout = new Checkout();
 		List<Item> items = new LinkedList<>();
 		
-
+		emailCompraRealizada(usuario);
 		
 		this.pedido.setUsuario(usuario);
 		
@@ -320,7 +325,19 @@ public class AjaxRequestController {
 		} catch (PagSeguroServiceException e) {
 			System.err.println(e.getMessage());
 		}
+		
 		return null;
 
+	}
+
+	private void emailCompraRealizada(Usuario usuario) {
+		SimpleMailMessage email = new SimpleMailMessage();
+		email.setSubject("Sua Compra foi realizada");
+		email.setTo(usuario.getEmail());
+		email.setText("sua compra foi realizada, so está aguardando confirmação de pagamento");
+		email.setFrom("gabriel26bartholo@gmail.com");
+		
+		
+		sender.send(email);
 	}
 }

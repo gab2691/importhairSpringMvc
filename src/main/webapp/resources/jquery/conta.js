@@ -138,7 +138,6 @@ var verificaEmail = function() {
 		},
 
 		success : function(resultado) {
-			console.log(resultado)
 			if (resultado == "false") {
 				$(".box-email-cadastro").addClass("remove-login");
 				$(".box-cadastro").addClass("show-login");
@@ -146,7 +145,6 @@ var verificaEmail = function() {
 			}
 
 			if (resultado == "true") {
-				console.log("vc ja tem cadastro");
 				$(".box-email-cadastro").removeClass("show-login");
 				$(".box-email-cadastro").removeClass("remove-login");
 				$(".box-email-cadastro").addClass("remove-login");
@@ -199,7 +197,6 @@ $(".btn-login").click(function() {
 		},
 
 		error : function(data, xhr) {
-			console.log("login incorreto");
 			$(".erro-login").removeClass("remove-login");
 			$(".erro-login").removeClass("show-login");
 			$(".erro-login").addClass("show-login");
@@ -257,7 +254,6 @@ $(".btn-envia-senha").on("click", showInformRecoverer)
 
 var nomeCompleto = function() {
 	var sobrenome = $(this).val().split(" ");
-	console.log(sobrenome.length);
 	if (sobrenome[1] == "" || sobrenome.length == 1){
 		$(".box-warn-name").removeClass("remove-login");
 		$(".box-warn-name").removeClass("show-login");
