@@ -78,7 +78,8 @@ public class AjaxRequestController {
 	
 	@Autowired
 	private MailSender sender;
-
+	
+	
 	@ResponseBody
 	@RequestMapping(value = "/atualizaTotal", method = RequestMethod.GET)
 	public Map<String, BigDecimal> atualizaTotal(Integer id, Integer quantidade) {
@@ -210,7 +211,15 @@ public class AjaxRequestController {
 		String verificaUsuario = Udao.verificaUsuario(email);
 		if(verificaUsuario.equals("true")){
 			Usuario usuario = Udao.BuscaUsuario(email);
-			return "http://recuperaSenha/token/?token=" + usuario.getHashRecovere();
+			
+				SimpleMailMessage emailRecuperaSenha = new SimpleMailMessage();
+				emailRecuperaSenha.setSubject("Sua Compra foi realizada");
+				emailRecuperaSenha.setTo(usuario.getEmail());
+				emailRecuperaSenha.setText("http://importhairspringmvc.herokuapp.com/token/?token=" + usuario.getHashRecovere());
+				emailRecuperaSenha.setFrom("gabriel26bartholo@gmail.com");
+				sender.send(emailRecuperaSenha);
+				
+				return "/";
 		}
 		return verificaUsuario;
 	}

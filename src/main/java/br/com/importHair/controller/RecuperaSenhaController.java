@@ -28,5 +28,5 @@ public class RecuperaSenhaController {
 		modelAndView.addObject("usuario", usuario);
 		return modelAndView;
 	}
-
+	
 }
