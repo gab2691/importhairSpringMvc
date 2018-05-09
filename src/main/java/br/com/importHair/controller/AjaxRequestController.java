@@ -218,7 +218,6 @@ public class AjaxRequestController {
 				emailRecuperaSenha.setText("http://importhairspringmvc.herokuapp.com/recuperaSenha/token/?token=" + usuario.getHashRecovere());
 				emailRecuperaSenha.setFrom("gabriel26bartholo@gmail.com");
 				sender.send(emailRecuperaSenha);
-				System.out.println("caindo no if");
 				
 				return "/";
 		}
