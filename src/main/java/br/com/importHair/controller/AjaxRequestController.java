@@ -215,9 +215,10 @@ public class AjaxRequestController {
 				SimpleMailMessage emailRecuperaSenha = new SimpleMailMessage();
 				emailRecuperaSenha.setSubject("Sua Compra foi realizada");
 				emailRecuperaSenha.setTo(usuario.getEmail());
-				emailRecuperaSenha.setText("http://importhairspringmvc.herokuapp.com/token/?token=" + usuario.getHashRecovere());
+				emailRecuperaSenha.setText("http://importhairspringmvc.herokuapp.com/recuperaSenha/token/?token=" + usuario.getHashRecovere());
 				emailRecuperaSenha.setFrom("gabriel26bartholo@gmail.com");
 				sender.send(emailRecuperaSenha);
+				System.out.println("caindo no if");
 				
 				return "/";
 		}
