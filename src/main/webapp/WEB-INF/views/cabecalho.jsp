@@ -179,7 +179,6 @@
 						<input pattern="[^ @]*@[^ @]*" type="email" name="email" class="input-inform input-cadastro input-cadastro-email" id="UsuarioSenhaRecovere" required="required">
 					</div>
 				</div>	
-				<input type="hidden" name="${_csrf.parameterName }"	value="${_csrf.token }"/>
 				<button class="btn-envia-senha">Enviar senha</button>
 			</div>
 			

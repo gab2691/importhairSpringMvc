@@ -224,6 +224,7 @@ var showInformRecoverer = function() {
 	$.ajax({
 		type : "GET",
 		url : "/geraToken",
+		contentType : "application/json; charset=utf-8",
 
 		data : {
 			"email" : email,
@@ -242,8 +243,7 @@ var showInformRecoverer = function() {
 			$(".box-recoverer-inform").removeClass("show-login");
 			$(".box-recovrer-password").addClass("remove-login");
 			$(".box-recoverer-inform").addClass("show-login");
-
-			$(location).attr('href', resultado);
+			
 		},
 
 	})

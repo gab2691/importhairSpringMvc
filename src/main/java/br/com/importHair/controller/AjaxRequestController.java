@@ -204,8 +204,9 @@ public class AjaxRequestController {
 		return usuario;
 	}
 
-	@ResponseBody
+	
 	@RequestMapping(value = "/geraToken", method = RequestMethod.GET)
+	@ResponseBody
 	public String recuperaSenha(String email) {
 		
 		String verificaUsuario = Udao.verificaUsuario(email);
@@ -219,7 +220,6 @@ public class AjaxRequestController {
 				emailRecuperaSenha.setFrom("gabriel26bartholo@gmail.com");
 				sender.send(emailRecuperaSenha);
 				
-				return "/";
 		}
 		return verificaUsuario;
 	}
