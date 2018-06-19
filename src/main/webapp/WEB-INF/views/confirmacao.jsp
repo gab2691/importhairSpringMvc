@@ -158,7 +158,7 @@
 			
 			<div class="container-resume-cart">
 				<div class="inform-text-cart title-cart confirm-page-text">subtotal 
-					<span class="details-text-cart">R$<spam class="sub-total-full">${pedido.subTotal}</spam></span>
+					<span class="details-text-cart">R$<span class="sub-total-full">${pedido.subTotal}</span></span>
 				</div>
 				
 				<div class="inform-text-cart title-cart confirm-page-text">entrega 
