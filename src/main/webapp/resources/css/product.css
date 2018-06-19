@@ -276,13 +276,13 @@
 
 .container-review {
 	display: flex;
-    flex-flow: column;
-    width: 90%;
-    height: 27em;
-    margin: auto;
-    margin-top: 2em;
-    justify-content: space-between;
-    align-items: flex-start;
+	flex-flow: column;
+	width: 90%;
+	height: 27em;
+	margin: auto;
+	margin-top: 2em;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .review-titles {
@@ -299,30 +299,32 @@
 }
 
 .name-user-review {
-    display: flex;
-    width: 50%;
-    flex-flow: column;
-    height: 4em;
-    justify-content: space-around;}
+	display: flex;
+	width: 50%;
+	flex-flow: column;
+	height: 4em;
+	justify-content: space-around;
+}
 
 .input-review-user {
 	box-shadow: 0 0 5px #ccc;
-    outline: 0;
-    color: #333;
-    background-color: #fff;
-    width: 31.8em;
-    height: 2em;
-    border: 1px solid #ddd;
-}
-
-.review-text{
+	outline: 0;
+	color: #333;
+	background-color: #fff;
+	width: 31.8em;
+	height: 2em;
 	border: 1px solid #ddd;
-    box-shadow: 0 0 5px #ccc;
-    height: 7.7em;
-    width: 100%;
 }
 
-.text-area{
+.review-text {
+	border: 1px solid #ddd;
+	box-shadow: 0 0 5px #ccc;
+	height: 7.7em;
+	width: 100%;
+}
+
+.text-area {
 	border: none;
+	width: 71em;
+	height: 9.3em;
 }
-
