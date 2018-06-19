@@ -168,9 +168,7 @@
 			</div>
 			
 			<button type="submit" class="btn-form-email btn-page-confirm">
-				<a href="" style="text-decoration:  none;margin:  auto;">
 					<span class="title-btn-email">Finalizar pedido</span>
-				</a>	
 			</button>
 		</div>
 	
