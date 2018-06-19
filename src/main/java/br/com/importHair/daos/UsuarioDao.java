@@ -20,8 +20,6 @@ public class UsuarioDao implements UserDetailsService {
 	@PersistenceContext
 	private EntityManager manager;
 
-
-
 	public Usuario addUsuario(Usuario usuario) {
 
 		manager.persist(usuario);
